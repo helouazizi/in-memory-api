@@ -10,7 +10,7 @@ type ArtistHandler struct {
 	Store *store.Memory_Store
 }
 
-func (h *ArtistHandler) GetArtists(w http.ResponseWriter, r *http.Request) {
+func (h *ArtistHandler) GetArtists_by_id(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(h.Store.Artists)
 }
