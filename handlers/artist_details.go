@@ -2,12 +2,12 @@ package handlers
 
 import (
 	"encoding/json"
-	"in-memory-api/store"
+	"in-memory-api/memory"
 	"net/http"
 )
 
 type ArtistHandler struct {
-	Store *store.Memory_Store
+	Store *memory.Memory_Store
 }
 
 func (h *ArtistHandler) GetArtists_by_id(w http.ResponseWriter, r *http.Request) {
