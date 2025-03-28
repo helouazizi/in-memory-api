@@ -47,6 +47,7 @@ func (s *Memory_Store) LoadData() {
 			json.NewDecoder(resp.Body).Decode(&s.Relations)
 		}
 	}
+	//fmt.Println(s.Artists)
 
 	log.Println("Data loaded successfully!")
 }
